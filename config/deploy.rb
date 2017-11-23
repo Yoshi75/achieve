@@ -26,6 +26,8 @@ set :rbenv_type, :system
 #出力するログのレベル。
 set :log_level, :debug
 
+set :ssh_options, :keepalive => true
+
 namespace :deploy do
   desc 'Restart application'
   task :restart do
